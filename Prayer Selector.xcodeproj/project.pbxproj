@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6193620F1C9216FA00C6AF21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193620E1C9216FA00C6AF21 /* AppDelegate.swift */; };
+		619362111C9216FA00C6AF21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619362101C9216FA00C6AF21 /* ViewController.swift */; };
+		619362141C9216FA00C6AF21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619362121C9216FA00C6AF21 /* Main.storyboard */; };
+		619362171C9216FA00C6AF21 /* Prayer_Selector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 619362151C9216FA00C6AF21 /* Prayer_Selector.xcdatamodeld */; };
+		619362191C9216FA00C6AF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619362181C9216FA00C6AF21 /* Assets.xcassets */; };
+		6193621C1C9216FA00C6AF21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6193621A1C9216FA00C6AF21 /* LaunchScreen.storyboard */; };
+		619362271C9216FB00C6AF21 /* Prayer_SelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619362261C9216FB00C6AF21 /* Prayer_SelectorTests.swift */; };
+		619362321C9216FB00C6AF21 /* Prayer_SelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619362311C9216FB00C6AF21 /* Prayer_SelectorUITests.swift */; };
+		619362401C92195700C6AF21 /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193623F1C92195700C6AF21 /* PersonCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		619362231C9216FA00C6AF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 619362031C9216FA00C6AF21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6193620A1C9216FA00C6AF21;
+			remoteInfo = "Prayer Selector";
+		};
+		6193622E1C9216FB00C6AF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 619362031C9216FA00C6AF21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6193620A1C9216FA00C6AF21;
+			remoteInfo = "Prayer Selector";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6193620B1C9216FA00C6AF21 /* Prayer Selector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prayer Selector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6193620E1C9216FA00C6AF21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		619362101C9216FA00C6AF21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		619362131C9216FA00C6AF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		619362161C9216FA00C6AF21 /* Prayer_Selector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prayer_Selector.xcdatamodel; sourceTree = "<group>"; };
+		619362181C9216FA00C6AF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6193621B1C9216FA00C6AF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6193621D1C9216FA00C6AF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		619362221C9216FA00C6AF21 /* Prayer SelectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prayer SelectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		619362261C9216FB00C6AF21 /* Prayer_SelectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer_SelectorTests.swift; sourceTree = "<group>"; };
+		619362281C9216FB00C6AF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6193622D1C9216FB00C6AF21 /* Prayer SelectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prayer SelectorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		619362311C9216FB00C6AF21 /* Prayer_SelectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer_SelectorUITests.swift; sourceTree = "<group>"; };
+		619362331C9216FB00C6AF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6193623F1C92195700C6AF21 /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		619362081C9216FA00C6AF21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6193621F1C9216FA00C6AF21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6193622A1C9216FB00C6AF21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		619362021C9216FA00C6AF21 = {
+			isa = PBXGroup;
+			children = (
+				6193620D1C9216FA00C6AF21 /* Prayer Selector */,
+				619362251C9216FA00C6AF21 /* Prayer SelectorTests */,
+				619362301C9216FB00C6AF21 /* Prayer SelectorUITests */,
+				6193620C1C9216FA00C6AF21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6193620C1C9216FA00C6AF21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6193620B1C9216FA00C6AF21 /* Prayer Selector.app */,
+				619362221C9216FA00C6AF21 /* Prayer SelectorTests.xctest */,
+				6193622D1C9216FB00C6AF21 /* Prayer SelectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6193620D1C9216FA00C6AF21 /* Prayer Selector */ = {
+			isa = PBXGroup;
+			children = (
+				6193620E1C9216FA00C6AF21 /* AppDelegate.swift */,
+				619362101C9216FA00C6AF21 /* ViewController.swift */,
+				6193623F1C92195700C6AF21 /* PersonCollectionViewCell.swift */,
+				619362121C9216FA00C6AF21 /* Main.storyboard */,
+				619362181C9216FA00C6AF21 /* Assets.xcassets */,
+				6193621A1C9216FA00C6AF21 /* LaunchScreen.storyboard */,
+				6193621D1C9216FA00C6AF21 /* Info.plist */,
+				619362151C9216FA00C6AF21 /* Prayer_Selector.xcdatamodeld */,
+			);
+			path = "Prayer Selector";
+			sourceTree = "<group>";
+		};
+		619362251C9216FA00C6AF21 /* Prayer SelectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				619362261C9216FB00C6AF21 /* Prayer_SelectorTests.swift */,
+				619362281C9216FB00C6AF21 /* Info.plist */,
+			);
+			path = "Prayer SelectorTests";
+			sourceTree = "<group>";
+		};
+		619362301C9216FB00C6AF21 /* Prayer SelectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				619362311C9216FB00C6AF21 /* Prayer_SelectorUITests.swift */,
+				619362331C9216FB00C6AF21 /* Info.plist */,
+			);
+			path = "Prayer SelectorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6193620A1C9216FA00C6AF21 /* Prayer Selector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 619362361C9216FB00C6AF21 /* Build configuration list for PBXNativeTarget "Prayer Selector" */;
+			buildPhases = (
+				619362071C9216FA00C6AF21 /* Sources */,
+				619362081C9216FA00C6AF21 /* Frameworks */,
+				619362091C9216FA00C6AF21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Prayer Selector";
+			productName = "Prayer Selector";
+			productReference = 6193620B1C9216FA00C6AF21 /* Prayer Selector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		619362211C9216FA00C6AF21 /* Prayer SelectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 619362391C9216FB00C6AF21 /* Build configuration list for PBXNativeTarget "Prayer SelectorTests" */;
+			buildPhases = (
+				6193621E1C9216FA00C6AF21 /* Sources */,
+				6193621F1C9216FA00C6AF21 /* Frameworks */,
+				619362201C9216FA00C6AF21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				619362241C9216FA00C6AF21 /* PBXTargetDependency */,
+			);
+			name = "Prayer SelectorTests";
+			productName = "Prayer SelectorTests";
+			productReference = 619362221C9216FA00C6AF21 /* Prayer SelectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6193622C1C9216FB00C6AF21 /* Prayer SelectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6193623C1C9216FB00C6AF21 /* Build configuration list for PBXNativeTarget "Prayer SelectorUITests" */;
+			buildPhases = (
+				619362291C9216FB00C6AF21 /* Sources */,
+				6193622A1C9216FB00C6AF21 /* Frameworks */,
+				6193622B1C9216FB00C6AF21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6193622F1C9216FB00C6AF21 /* PBXTargetDependency */,
+			);
+			name = "Prayer SelectorUITests";
+			productName = "Prayer SelectorUITests";
+			productReference = 6193622D1C9216FB00C6AF21 /* Prayer SelectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		619362031C9216FA00C6AF21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Brian Pilati";
+				TargetAttributes = {
+					6193620A1C9216FA00C6AF21 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U95994HMYX;
+					};
+					619362211C9216FA00C6AF21 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U95994HMYX;
+						TestTargetID = 6193620A1C9216FA00C6AF21;
+					};
+					6193622C1C9216FB00C6AF21 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U95994HMYX;
+						TestTargetID = 6193620A1C9216FA00C6AF21;
+					};
+				};
+			};
+			buildConfigurationList = 619362061C9216FA00C6AF21 /* Build configuration list for PBXProject "Prayer Selector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 619362021C9216FA00C6AF21;
+			productRefGroup = 6193620C1C9216FA00C6AF21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6193620A1C9216FA00C6AF21 /* Prayer Selector */,
+				619362211C9216FA00C6AF21 /* Prayer SelectorTests */,
+				6193622C1C9216FB00C6AF21 /* Prayer SelectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		619362091C9216FA00C6AF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6193621C1C9216FA00C6AF21 /* LaunchScreen.storyboard in Resources */,
+				619362191C9216FA00C6AF21 /* Assets.xcassets in Resources */,
+				619362141C9216FA00C6AF21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619362201C9216FA00C6AF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6193622B1C9216FB00C6AF21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		619362071C9216FA00C6AF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619362111C9216FA00C6AF21 /* ViewController.swift in Sources */,
+				6193620F1C9216FA00C6AF21 /* AppDelegate.swift in Sources */,
+				619362171C9216FA00C6AF21 /* Prayer_Selector.xcdatamodeld in Sources */,
+				619362401C92195700C6AF21 /* PersonCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6193621E1C9216FA00C6AF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619362271C9216FB00C6AF21 /* Prayer_SelectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619362291C9216FB00C6AF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619362321C9216FB00C6AF21 /* Prayer_SelectorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		619362241C9216FA00C6AF21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6193620A1C9216FA00C6AF21 /* Prayer Selector */;
+			targetProxy = 619362231C9216FA00C6AF21 /* PBXContainerItemProxy */;
+		};
+		6193622F1C9216FB00C6AF21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6193620A1C9216FA00C6AF21 /* Prayer Selector */;
+			targetProxy = 6193622E1C9216FB00C6AF21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		619362121C9216FA00C6AF21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				619362131C9216FA00C6AF21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6193621A1C9216FA00C6AF21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6193621B1C9216FA00C6AF21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		619362341C9216FB00C6AF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		619362351C9216FB00C6AF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		619362371C9216FB00C6AF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Prayer Selector/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pilatifamily.Prayer-Selector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		619362381C9216FB00C6AF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Prayer Selector/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pilatifamily.Prayer-Selector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6193623A1C9216FB00C6AF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Prayer SelectorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pilatifamily.Prayer-SelectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prayer Selector.app/Prayer Selector";
+			};
+			name = Debug;
+		};
+		6193623B1C9216FB00C6AF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Prayer SelectorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pilatifamily.Prayer-SelectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prayer Selector.app/Prayer Selector";
+			};
+			name = Release;
+		};
+		6193623D1C9216FB00C6AF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Prayer SelectorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pilatifamily.Prayer-SelectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Prayer Selector";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6193623E1C9216FB00C6AF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Prayer SelectorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pilatifamily.Prayer-SelectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Prayer Selector";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		619362061C9216FA00C6AF21 /* Build configuration list for PBXProject "Prayer Selector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				619362341C9216FB00C6AF21 /* Debug */,
+				619362351C9216FB00C6AF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		619362361C9216FB00C6AF21 /* Build configuration list for PBXNativeTarget "Prayer Selector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				619362371C9216FB00C6AF21 /* Debug */,
+				619362381C9216FB00C6AF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		619362391C9216FB00C6AF21 /* Build configuration list for PBXNativeTarget "Prayer SelectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6193623A1C9216FB00C6AF21 /* Debug */,
+				6193623B1C9216FB00C6AF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6193623C1C9216FB00C6AF21 /* Build configuration list for PBXNativeTarget "Prayer SelectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6193623D1C9216FB00C6AF21 /* Debug */,
+				6193623E1C9216FB00C6AF21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		619362151C9216FA00C6AF21 /* Prayer_Selector.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				619362161C9216FA00C6AF21 /* Prayer_Selector.xcdatamodel */,
+			);
+			currentVersion = 619362161C9216FA00C6AF21 /* Prayer_Selector.xcdatamodel */;
+			path = Prayer_Selector.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 619362031C9216FA00C6AF21 /* Project object */;
+}
