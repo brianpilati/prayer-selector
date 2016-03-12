@@ -14,13 +14,11 @@ class PersonCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        myLabel.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width/3, UIScreen.mainScreen().bounds.width/3)
         myLabel.textAlignment = NSTextAlignment.Center
         contentView.addSubview(myLabel)
     }
 
     required init?(coder aDecoder: NSCoder) {
-        print("oops")
         fatalError("init(coder:) has not been implemented")
     }
 }
