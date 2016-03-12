@@ -252,7 +252,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(collectionView: UICollectionView, didUnhighlightItemAtIndexPath indexPath: NSIndexPath) {
         let cell = collectionView.cellForItemAtIndexPath(indexPath)
-        cell?.backgroundColor = UIColor.yellowColor()
+        cell?.backgroundColor = UIColor(red: 255.0/255.0, green: 228.0/255.0, blue: 181.0/255.0, alpha: 0.75)
     }
     
     // MARK: - UICollectionViewDelegate protocol

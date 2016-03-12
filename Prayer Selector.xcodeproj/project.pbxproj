@@ -495,6 +495,7 @@
 				619362381C9216FB00C6AF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		619362391C9216FB00C6AF21 /* Build configuration list for PBXNativeTarget "Prayer SelectorTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +504,7 @@
 				6193623B1C9216FB00C6AF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6193623C1C9216FB00C6AF21 /* Build configuration list for PBXNativeTarget "Prayer SelectorUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +513,7 @@
 				6193623E1C9216FB00C6AF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
