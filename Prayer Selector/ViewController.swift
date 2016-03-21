@@ -20,6 +20,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     var personSelectButton: UIButton = UIButton()
     let cellSpacing: CGFloat = 5
     var cellWidthAndHeight: CGFloat = 0
+    let selectedPerson: UILabel = UILabel()
+    let congratulations: UILabel = UILabel()
+    let appTitle: UILabel = UILabel()
     
     enum SelectStatus{
         case ready
@@ -79,9 +82,36 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         self.personSelectButton.setContentHuggingPriority(UILayoutPriorityDefaultLow, forAxis: UILayoutConstraintAxis.Vertical)
         self.personSelectButton.layer.cornerRadius = self.view.bounds.width/25
         
+        self.selectedPerson.frame = CGRectMake(0, 0, screenSize.width * 0.8, 200)
+        self.selectedPerson.center = self.view.center
+        self.selectedPerson.layer.borderWidth = 2
+        self.selectedPerson.layer.cornerRadius = 25;
+        self.selectedPerson.layer.borderColor = UIColor.blackColor().CGColor
+        self.selectedPerson.hidden = true;
+        self.selectedPerson.font = UIFont(name: "Arial-BoldMt", size: 72)
+        self.selectedPerson.adjustsFontSizeToFitWidth = true
+        self.selectedPerson.textAlignment = NSTextAlignment.Center
+        self.selectedPerson.backgroundColor = UIColor.whiteColor()
+        
+        self.congratulations.frame = CGRectMake(self.view.frame.width / CGFloat(2) - 200, self.view.frame.height / CGFloat(2) - 175, 400, 75)
+        self.congratulations.hidden = true;
+        self.congratulations.font = UIFont(name: "Arial-BoldMt", size: 60)
+        self.congratulations.adjustsFontSizeToFitWidth = true
+        self.congratulations.textAlignment = NSTextAlignment.Center
+        self.congratulations.backgroundColor = UIColor.clearColor()
+        self.congratulations.text = "Congratulations!"
+        
+        self.appTitle.frame = CGRectMake(self.view.frame.width / CGFloat(2) - 150, 10, 300, 50)
+        self.appTitle.font = UIFont(name: "Arial-BoldMt", size: 24)
+        self.appTitle.textAlignment = NSTextAlignment.Center
+        self.appTitle.backgroundColor = UIColor.clearColor()
+        self.appTitle.text = "Prayer Selector"
         
         self.statusReady()
         self.view.addSubview(personSelectButton)
+        self.view.addSubview(selectedPerson)
+        self.view.addSubview(congratulations)
+        self.view.addSubview(appTitle)
     }
     
     func addBackgroundImage() {
@@ -150,6 +180,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         if (self.selectStatus == SelectStatus.ready) {
             self.personSelectButton.backgroundColor = UIColor(red: 173.0/255.0, green: 255.0/255.0, blue: 47.0/255.0, alpha: 1.0)
             self.personSelectButton.enabled = true
+            self.selectedPerson.hidden = true
+            self.congratulations.hidden = true;
             title = "Ready"
         } else if (self.selectStatus == SelectStatus.sorting) {
             self.personSelectButton.enabled = false
@@ -202,22 +234,27 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func colorCell() {
         let indexPath: NSIndexPath = NSIndexPath(forItem: 0, inSection: 0)
         let cell = collectionView!.cellForItemAtIndexPath(indexPath) as! PersonCollectionViewCell
-        cell.backgroundColor = UIColor(red: 173.0/255.0, green: 255.0/255.0, blue: 47.0/255.0, alpha: 1.0)
-        cell.myLabel.textColor = UIColor.whiteColor()
-        cell.myLabel.font = UIFont(name: "Arial-BoldMt", size: 60)
-        cell.myLabel.adjustsFontSizeToFitWidth = true
-        timer?.invalidate()
-        self.statusReset()
-    }
-    
-    func selectPerson() {
-        self.shuffle()
+        
+        self.congratulations.hidden = false;
+        self.selectedPerson.hidden = false;
+        self.selectedPerson.text = cell.myLabel.text
+        
         self.people.removeLast()
         self.collectionView?.reloadData()
         
-        if( self.people.count == 1) {
+        timer?.invalidate()
+        self.statusReset()
+        
+    }
+    
+    func selectPerson() {
+        if( self.people.count <= 1) {
             timer?.invalidate()
             timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "colorCell", userInfo: nil, repeats: false)
+        } else {
+            self.shuffle()
+            self.people.removeLast()
+            self.collectionView?.reloadData()
         }
     }
     
