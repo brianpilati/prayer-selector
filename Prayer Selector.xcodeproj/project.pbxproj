@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		611CEACE1CA1E5BD00A1A65C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611CEACD1CA1E5BD00A1A65C /* MainViewController.swift */; };
+		611CEAD01CA1E6DE00A1A65C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611CEACF1CA1E6DE00A1A65C /* MainViewController.swift */; };
 		6193620F1C9216FA00C6AF21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193620E1C9216FA00C6AF21 /* AppDelegate.swift */; };
-		619362111C9216FA00C6AF21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619362101C9216FA00C6AF21 /* ViewController.swift */; };
 		619362141C9216FA00C6AF21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619362121C9216FA00C6AF21 /* Main.storyboard */; };
 		619362171C9216FA00C6AF21 /* Prayer_Selector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 619362151C9216FA00C6AF21 /* Prayer_Selector.xcdatamodeld */; };
 		619362191C9216FA00C6AF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619362181C9216FA00C6AF21 /* Assets.xcassets */; };
 		6193621C1C9216FA00C6AF21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6193621A1C9216FA00C6AF21 /* LaunchScreen.storyboard */; };
-		619362271C9216FB00C6AF21 /* Prayer_SelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619362261C9216FB00C6AF21 /* Prayer_SelectorTests.swift */; };
 		619362321C9216FB00C6AF21 /* Prayer_SelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619362311C9216FB00C6AF21 /* Prayer_SelectorUITests.swift */; };
 		619362401C92195700C6AF21 /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193623F1C92195700C6AF21 /* PersonCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -36,16 +36,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		611CEACD1CA1E5BD00A1A65C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		611CEACF1CA1E6DE00A1A65C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6193620B1C9216FA00C6AF21 /* Prayer Selector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prayer Selector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6193620E1C9216FA00C6AF21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		619362101C9216FA00C6AF21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		619362131C9216FA00C6AF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		619362161C9216FA00C6AF21 /* Prayer_Selector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prayer_Selector.xcdatamodel; sourceTree = "<group>"; };
 		619362181C9216FA00C6AF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6193621B1C9216FA00C6AF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6193621D1C9216FA00C6AF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619362221C9216FA00C6AF21 /* Prayer SelectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prayer SelectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		619362261C9216FB00C6AF21 /* Prayer_SelectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer_SelectorTests.swift; sourceTree = "<group>"; };
 		619362281C9216FB00C6AF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6193622D1C9216FB00C6AF21 /* Prayer SelectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prayer SelectorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		619362311C9216FB00C6AF21 /* Prayer_SelectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer_SelectorUITests.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				6193620E1C9216FA00C6AF21 /* AppDelegate.swift */,
-				619362101C9216FA00C6AF21 /* ViewController.swift */,
+				611CEACF1CA1E6DE00A1A65C /* MainViewController.swift */,
 				6193623F1C92195700C6AF21 /* PersonCollectionViewCell.swift */,
 				619362121C9216FA00C6AF21 /* Main.storyboard */,
 				619362181C9216FA00C6AF21 /* Assets.xcassets */,
@@ -116,7 +116,7 @@
 		619362251C9216FA00C6AF21 /* Prayer SelectorTests */ = {
 			isa = PBXGroup;
 			children = (
-				619362261C9216FB00C6AF21 /* Prayer_SelectorTests.swift */,
+				611CEACD1CA1E5BD00A1A65C /* MainViewController.swift */,
 				619362281C9216FB00C6AF21 /* Info.plist */,
 			);
 			path = "Prayer SelectorTests";
@@ -265,10 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619362111C9216FA00C6AF21 /* ViewController.swift in Sources */,
 				6193620F1C9216FA00C6AF21 /* AppDelegate.swift in Sources */,
 				619362171C9216FA00C6AF21 /* Prayer_Selector.xcdatamodeld in Sources */,
 				619362401C92195700C6AF21 /* PersonCollectionViewCell.swift in Sources */,
+				611CEAD01CA1E6DE00A1A65C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619362271C9216FB00C6AF21 /* Prayer_SelectorTests.swift in Sources */,
+				611CEACE1CA1E5BD00A1A65C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

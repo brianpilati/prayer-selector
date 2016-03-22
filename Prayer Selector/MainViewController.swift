@@ -1,17 +1,22 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Prayer Selector
 //
-//  Created by Brian Pilati on 3/10/16.
+//  Created by Brian Pilati on 3/22/16.
 //  Copyright © 2016 Brian Pilati. All rights reserved.
 //
-
 
 import UIKit
 import GameplayKit
 import Darwin
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+enum SelectStatus {
+    case ready
+    case sorting
+    case reset
+}
+
+class MainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var timer: NSTimer!
     var collectionView: UICollectionView?
@@ -23,12 +28,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     let selectedPerson: UILabel = UILabel()
     let congratulations: UILabel = UILabel()
     let appTitle: UILabel = UILabel()
-    
-    enum SelectStatus{
-        case ready
-        case sorting
-        case reset
-    }
     
     var selectStatus: SelectStatus!
     
@@ -63,14 +62,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         layout.minimumInteritemSpacing = cellSpacing
         layout.minimumLineSpacing = cellSpacing
         
-        
         let frame = CGRectMake(0, yOffset, self.view.frame.width, calculateCollectionHeight())
         collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
         collectionView!.dataSource = self
         collectionView!.delegate = self
         collectionView!.registerClass(PersonCollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
         collectionView!.backgroundColor = UIColor.clearColor()
-        self.view.addSubview(collectionView!)
+        collectionView!.tag = 110
         addBackgroundImage()
         
         self.personSelectButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
@@ -81,6 +79,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         self.personSelectButton.addTarget(self, action: "startSelectionProcess:", forControlEvents: .TouchUpInside)
         self.personSelectButton.setContentHuggingPriority(UILayoutPriorityDefaultLow, forAxis: UILayoutConstraintAxis.Vertical)
         self.personSelectButton.layer.cornerRadius = self.view.bounds.width/25
+        self.personSelectButton.tag = 111
         
         self.selectedPerson.frame = CGRectMake(0, 0, screenSize.width * 0.8, 200)
         self.selectedPerson.center = self.view.center
@@ -92,6 +91,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         self.selectedPerson.adjustsFontSizeToFitWidth = true
         self.selectedPerson.textAlignment = NSTextAlignment.Center
         self.selectedPerson.backgroundColor = UIColor.whiteColor()
+        self.selectedPerson.tag = 112
         
         self.congratulations.frame = CGRectMake(self.view.frame.width / CGFloat(2) - 200, self.view.frame.height / CGFloat(2) - 175, 400, 75)
         self.congratulations.hidden = true;
@@ -100,14 +100,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         self.congratulations.textAlignment = NSTextAlignment.Center
         self.congratulations.backgroundColor = UIColor.clearColor()
         self.congratulations.text = "Congratulations!"
+        self.congratulations.tag = 113
         
         self.appTitle.frame = CGRectMake(self.view.frame.width / CGFloat(2) - 150, 10, 300, 50)
         self.appTitle.font = UIFont(name: "Arial-BoldMt", size: 24)
         self.appTitle.textAlignment = NSTextAlignment.Center
         self.appTitle.backgroundColor = UIColor.clearColor()
         self.appTitle.text = "Prayer Selector"
+        self.appTitle.tag = 114
         
         self.statusReady()
+        self.view.addSubview(collectionView!)
         self.view.addSubview(personSelectButton)
         self.view.addSubview(selectedPerson)
         self.view.addSubview(congratulations)
@@ -123,6 +126,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         // you can change the content mode:
         imageViewBackground.contentMode = UIViewContentMode.ScaleAspectFit
+        imageViewBackground.tag = 115
         
         view.addSubview(imageViewBackground)
         view.sendSubviewToBack(imageViewBackground)
@@ -135,7 +139,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func shouldAutorotate() -> Bool {
         return false
     }
-
+    
     func getCellWidth(columns: Int) -> CGFloat {
         return view.bounds.width / CGFloat(columns) - cellSpacing
     }
@@ -321,7 +325,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         self.collectionView?.reloadData()
         deletedPerson = nil
     }
-
+    
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) {
         if(event.subtype == UIEventSubtype.MotionShake) {
             if (deletedPerson != nil) {

@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="4ww-1a-hWh">
             <objects>
-                <viewController id="vjH-gs-Zst" customClass="ViewController" customModule="Prayer_Selector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="vjH-gs-Zst" customClass="MainViewController" customModule="Prayer_Selector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gXd-cV-64S"/>
                         <viewControllerLayoutGuide type="bottom" id="Ibd-OZ-KgD"/>
