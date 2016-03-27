@@ -33,7 +33,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     var deletedPerson: AnyObject!
     
-    var originalPeople: [AnyObject] = ["Ammon", "Levi", "Abby", "Dylan", "Jaden", "Lea", "Brynn", "Madeline", "Jayelyn", "Jordan", "Brother Hales", "Sister Hales"]
+    var originalPeople: [AnyObject] = ["Ammon", "Levi", "Abby", "Dylan", "Jaden", "Lea", "Brynn", "Madeline", "Jayelyn", "Jordan", "Brother Hales", "Sister Hales", "Guest"]
     
     var people: [AnyObject] = []
     let yOffset: CGFloat = 50
